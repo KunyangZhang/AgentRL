@@ -6,4 +6,5 @@ ray==2.58.0
 numpy
 requests
 anthropic
+openai
 pytest
