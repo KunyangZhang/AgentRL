@@ -1,0 +1,493 @@
+{
+  "scope": "synthetic tool dispatch; small neural policy; not LLM fine-tuning",
+  "protocol": "fixed final checkpoint; greedy held-out evaluation; no test-based model selection",
+  "runs": [
+    {
+      "seed": 17,
+      "shaped": true,
+      "before": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.9201041666666666,
+          "mean_tool_calls": 7.51171875,
+          "invalid_action_rate": 0.796671866874675,
+          "fault_encountered_episodes": 60,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -1.1292280505952381,
+          "mean_tool_calls": 9.13671875,
+          "invalid_action_rate": 0.8247114151346729,
+          "fault_encountered_episodes": 114,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        }
+      },
+      "after": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.24973958333333332,
+          "mean_tool_calls": 2.2265625,
+          "invalid_action_rate": 0.0,
+          "fault_encountered_episodes": 58,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.29278831845238096,
+          "mean_tool_calls": 2.66796875,
+          "invalid_action_rate": 0.0,
+          "fault_encountered_episodes": 118,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        }
+      },
+      "checkpoint_sha256": "5c2ea7fa0b41c8fe01b8767b87a1328c96dca3bbd41551f50116c7af9cc2a353"
+    },
+    {
+      "seed": 17,
+      "shaped": false,
+      "before": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.3,
+          "mean_tool_calls": 7.51171875,
+          "invalid_action_rate": 0.796671866874675,
+          "fault_encountered_episodes": 60,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.3,
+          "mean_tool_calls": 9.13671875,
+          "invalid_action_rate": 0.8247114151346729,
+          "fault_encountered_episodes": 114,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        }
+      },
+      "after": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 1.0,
+          "success_wilson95": [
+            0.9852156082782743,
+            1.0
+          ],
+          "mean_return": 1.0,
+          "mean_tool_calls": 5.16015625,
+          "invalid_action_rate": 0.08251324753974262,
+          "fault_encountered_episodes": 145,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 1.0,
+          "recovery_success_rate": 1.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 1.0,
+          "success_wilson95": [
+            0.9852156082782743,
+            1.0
+          ],
+          "mean_return": 1.0,
+          "mean_tool_calls": 12.13671875,
+          "invalid_action_rate": 0.04441583521081429,
+          "fault_encountered_episodes": 249,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 1.0,
+          "recovery_success_rate": 1.0
+        }
+      },
+      "checkpoint_sha256": "b95d5b4666919995db2c9d3930cdc45f9adf9a1a733e653d2c8789a7cb542859"
+    },
+    {
+      "seed": 29,
+      "shaped": true,
+      "before": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -1.1098697916666667,
+          "mean_tool_calls": 8.8515625,
+          "invalid_action_rate": 0.8698146513680495,
+          "fault_encountered_episodes": 39,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -1.778031994047619,
+          "mean_tool_calls": 14.96875,
+          "invalid_action_rate": 0.9026617954070981,
+          "fault_encountered_episodes": 80,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        }
+      },
+      "after": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.24973958333333332,
+          "mean_tool_calls": 2.2265625,
+          "invalid_action_rate": 0.0,
+          "fault_encountered_episodes": 58,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.29278831845238096,
+          "mean_tool_calls": 2.66796875,
+          "invalid_action_rate": 0.0,
+          "fault_encountered_episodes": 118,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        }
+      },
+      "checkpoint_sha256": "dc9cafc2285460ff3bcfd394921e797b6bf6fc3cba7cc3422c30a9e6f2d71754"
+    },
+    {
+      "seed": 29,
+      "shaped": false,
+      "before": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.3,
+          "mean_tool_calls": 8.8515625,
+          "invalid_action_rate": 0.8698146513680495,
+          "fault_encountered_episodes": 39,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.3,
+          "mean_tool_calls": 14.96875,
+          "invalid_action_rate": 0.9026617954070981,
+          "fault_encountered_episodes": 80,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        }
+      },
+      "after": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 1.0,
+          "success_wilson95": [
+            0.9852156082782743,
+            1.0
+          ],
+          "mean_return": 1.0,
+          "mean_tool_calls": 4.734375,
+          "invalid_action_rate": 0.0,
+          "fault_encountered_episodes": 145,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 1.0,
+          "recovery_success_rate": 1.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 1.0,
+          "success_wilson95": [
+            0.9852156082782743,
+            1.0
+          ],
+          "mean_return": 1.0,
+          "mean_tool_calls": 11.59765625,
+          "invalid_action_rate": 0.0,
+          "fault_encountered_episodes": 249,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 1.0,
+          "recovery_success_rate": 1.0
+        }
+      },
+      "checkpoint_sha256": "6392b6e20a671e5605232e4c01d798d73ef809204ea7d21a31dabaf21b282935"
+    },
+    {
+      "seed": 43,
+      "shaped": true,
+      "before": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.8755078125,
+          "mean_tool_calls": 5.83203125,
+          "invalid_action_rate": 0.8868050904219692,
+          "fault_encountered_episodes": 0,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": null
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -1.1978515625,
+          "mean_tool_calls": 8.76953125,
+          "invalid_action_rate": 0.9238307349665924,
+          "fault_encountered_episodes": 0,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": null
+        }
+      },
+      "after": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.24973958333333332,
+          "mean_tool_calls": 2.2265625,
+          "invalid_action_rate": 0.0,
+          "fault_encountered_episodes": 58,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.29278831845238096,
+          "mean_tool_calls": 2.66796875,
+          "invalid_action_rate": 0.0,
+          "fault_encountered_episodes": 118,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": 0.0
+        }
+      },
+      "checkpoint_sha256": "c8b4ef08a82f68facb3ff32e508a3af0e1e8c5fd89f5d6c7c6cd168bb7fc598f"
+    },
+    {
+      "seed": 43,
+      "shaped": false,
+      "before": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.3,
+          "mean_tool_calls": 5.83203125,
+          "invalid_action_rate": 0.8868050904219692,
+          "fault_encountered_episodes": 0,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": null
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 0.0,
+          "success_wilson95": [
+            0.0,
+            0.014784391721725852
+          ],
+          "mean_return": -0.3,
+          "mean_tool_calls": 8.76953125,
+          "invalid_action_rate": 0.9238307349665924,
+          "fault_encountered_episodes": 0,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 0.0,
+          "recovery_success_rate": null
+        }
+      },
+      "after": {
+        "test": {
+          "episodes": 256,
+          "success_rate": 1.0,
+          "success_wilson95": [
+            0.9852156082782743,
+            1.0
+          ],
+          "mean_return": 1.0,
+          "mean_tool_calls": 5.875,
+          "invalid_action_rate": 0.19414893617021275,
+          "fault_encountered_episodes": 145,
+          "fault_assigned_episodes": 145,
+          "fault_assigned_success_rate": 1.0,
+          "recovery_success_rate": 1.0
+        },
+        "stress": {
+          "episodes": 256,
+          "success_rate": 1.0,
+          "success_wilson95": [
+            0.9852156082782743,
+            1.0
+          ],
+          "mean_return": 1.0,
+          "mean_tool_calls": 13.0390625,
+          "invalid_action_rate": 0.11054523666866387,
+          "fault_encountered_episodes": 249,
+          "fault_assigned_episodes": 249,
+          "fault_assigned_success_rate": 1.0,
+          "recovery_success_rate": 1.0
+        }
+      },
+      "checkpoint_sha256": "36803e4559c14146d366bd22292a5d791bc9e105f97b9dd4bcceae173c6228bf"
+    }
+  ],
+  "baselines": {
+    "random": {
+      "test": {
+        "episodes": 256,
+        "success_rate": 0.0390625,
+        "success_wilson95": [
+          0.021353804338076477,
+          0.07040055678038956
+        ],
+        "mean_return": -0.5487369791666666,
+        "mean_tool_calls": 4.671875,
+        "invalid_action_rate": 0.6279264214046822,
+        "fault_encountered_episodes": 51,
+        "fault_assigned_episodes": 145,
+        "fault_assigned_success_rate": 0.0,
+        "recovery_success_rate": 0.0
+      },
+      "stress": {
+        "episodes": 256,
+        "success_rate": 0.0,
+        "success_wilson95": [
+          0.0,
+          0.014784391721725852
+        ],
+        "mean_return": -0.6173065476190476,
+        "mean_tool_calls": 4.9921875,
+        "invalid_action_rate": 0.5688575899843505,
+        "fault_encountered_episodes": 88,
+        "fault_assigned_episodes": 249,
+        "fault_assigned_success_rate": 0.0,
+        "recovery_success_rate": 0.0
+      }
+    },
+    "oracle": {
+      "test": {
+        "episodes": 256,
+        "success_rate": 1.0,
+        "success_wilson95": [
+          0.9852156082782743,
+          1.0
+        ],
+        "mean_return": 1.15265625,
+        "mean_tool_calls": 4.734375,
+        "invalid_action_rate": 0.0,
+        "fault_encountered_episodes": 145,
+        "fault_assigned_episodes": 145,
+        "fault_assigned_success_rate": 1.0,
+        "recovery_success_rate": 1.0
+      },
+      "stress": {
+        "episodes": 256,
+        "success_rate": 1.0,
+        "success_wilson95": [
+          0.9852156082782743,
+          1.0
+        ],
+        "mean_return": 1.0840234375,
+        "mean_tool_calls": 11.59765625,
+        "invalid_action_rate": 0.0,
+        "fault_encountered_episodes": 249,
+        "fault_assigned_episodes": 249,
+        "fault_assigned_success_rate": 1.0,
+        "recovery_success_rate": 1.0
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.13.0+cpu",
+    "device": "cpu",
+    "git_head": "6a73409d31ba695d383b978a8ad3ef400d90c054",
+    "working_tree_dirty": true
+  }
+}

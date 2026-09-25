@@ -1,0 +1,14 @@
+{
+  "backend": "lora",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "updates": 100,
+  "batch_size": 2,
+  "group_size": 4,
+  "micro_batch": 2,
+  "learning_rate": 5e-05,
+  "eval_count": 64,
+  "eval_every": 20,
+  "kl_coef": 0.02,
+  "shaped": false
+}

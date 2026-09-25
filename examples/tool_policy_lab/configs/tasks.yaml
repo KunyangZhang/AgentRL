@@ -1,0 +1,14 @@
+tool-policy-train:
+  module: tool_policy_lab.task.ToolPolicyTask
+  parameters:
+    name: tool-policy-train
+    split: train
+    count: 256
+    concurrency: 16
+tool-policy-dev:
+  module: tool_policy_lab.task.ToolPolicyTask
+  parameters:
+    name: tool-policy-dev
+    split: dev
+    count: 128
+    concurrency: 16

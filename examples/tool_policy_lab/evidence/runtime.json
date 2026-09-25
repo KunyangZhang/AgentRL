@@ -1,0 +1,26 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.13.0+cpu",
+    "ray": "2.57.0",
+    "tensordict": "0.10.0",
+    "transformers": "5.10.4",
+    "openai": "2.54.0",
+    "anthropic": "1.8.0",
+    "pydantic": "2.13.4",
+    "pytest": "9.0.3",
+    "peft": "0.20.0",
+    "numpy": "1.26.4"
+  },
+  "tested_device": "CPU",
+  "upstream_sha": "6a73409d31ba695d383b978a8ad3ef400d90c054",
+  "source_sha256": {
+    "examples/tool_policy_lab/tool_policy_lab/__init__.py": "6bb80978d3aa668afa4ea4cc11fbe044e2e1d9b828f5be15bed71a04c4803ded",
+    "examples/tool_policy_lab/tool_policy_lab/cli.py": "e6bf1ffcafb4643590c545b02f86704a7818a68c5cd31bb207f9e3fc349e3207",
+    "examples/tool_policy_lab/tool_policy_lab/environment.py": "ce674844225d14bff8d61aa0ca99f64f0321ebccd09091a593139402da85aed0",
+    "examples/tool_policy_lab/tool_policy_lab/policy.py": "f7b6482ca1c1d1f61756aea30c66f3175f4fafa85cf6ccf12631839627e95ed2",
+    "examples/tool_policy_lab/tool_policy_lab/rollout.py": "138a8f50b2ef54586da679446470af7544f87ed8f1a6cf9b4f7a212ae7c05aeb",
+    "examples/tool_policy_lab/tool_policy_lab/task.py": "239651f0780db799dc2d8db49a6ec56805af68674e89dcfe4c5a839c55cb4b97",
+    "examples/tool_policy_lab/tool_policy_lab/training.py": "7537ecc39390c48994fbdc7c3b0ed55b332e2c33cd96b03fb639370d8bd8339e"
+  }
+}

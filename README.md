@@ -1,5 +1,7 @@
 # AgentRL
 
+> This fork's Tool Policy Lab extension: [implementation, experiments and AutoDL handoff](FORK_README.md).
+
 Scaling Agentic Reinforcement Learning with a Multi-Turn, Multi-Task Framework
 
 <p align="center">

@@ -1,0 +1,10 @@
+{
+  "backend": "small",
+  "updates": 100,
+  "batch_size": 16,
+  "group_size": 8,
+  "micro_batch": 256,
+  "learning_rate": 0.003,
+  "eval_every": 20,
+  "shaped": false
+}
