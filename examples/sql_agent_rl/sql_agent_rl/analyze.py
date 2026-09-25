@@ -45,10 +45,11 @@ def analyze(path):
             'difference':sum(diffs)/len(diffs), 'bootstrap_95pct':[bootstrap[249],bootstrap[9749]],
             'improved_questions':diffs.count(1), 'regressed_questions':diffs.count(-1)}
     updates = [json.loads(line) for line in (path/'grpo.jsonl').read_text().splitlines()]
+    group_size = json.loads((path/'protocol.json').read_text())['config']['group_size']
     result['grpo_training'] = {'logged_updates':len(updates),
         'zero_reward_variance_groups':sum(x.get('reward_std',0)<1e-6 for x in updates),
         'nonzero_reward_variance_groups':sum(x.get('reward_std',0)>=1e-6 for x in updates),
-        'sampled_trajectories':4*len(updates)}
+        'sampled_trajectories':group_size*len(updates)}
     (path/'analysis.json').write_text(json.dumps(result,indent=2))
     print(json.dumps(result,indent=2))
     return result
