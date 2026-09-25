@@ -1,6 +1,7 @@
+> **Fork extension:** [SQL Agentic RL — real-model training, tools and measured evaluation](FORK_README.md). Upstream AgentRL documentation follows.
+
 # AgentRL
 
-> This fork's Tool Policy Lab extension: [implementation, experiments and AutoDL handoff](FORK_README.md).
 
 Scaling Agentic Reinforcement Learning with a Multi-Turn, Multi-Task Framework
 

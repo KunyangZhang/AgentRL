@@ -1,0 +1,122 @@
+{
+  "scope": "Spider filtered subset, single-database execution match, one training seed",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8"
+  },
+  "config": {
+    "seed": 17,
+    "model": "/root/autodl-tmp/agent-lab/model",
+    "data": "/root/autodl-tmp/agent-lab/splits",
+    "databases": "/root/autodl-tmp/agent-lab/spider/database",
+    "max_context": 3072,
+    "max_new_tokens": 160,
+    "max_turns": 3,
+    "temperature": 0.8,
+    "lora_rank": 16,
+    "sft_epochs": 1,
+    "sft_accumulate": 4,
+    "sft_lr": 0.0001,
+    "rl_lr": 1e-05,
+    "rl_updates": 40,
+    "group_size": 4,
+    "clip": 0.2,
+    "kl_coef": 0.01,
+    "eval_batch": 4
+  },
+  "results": {
+    "base": {
+      "n": 64,
+      "correct": 1,
+      "execution_match": 0.015625,
+      "executable_rate": 0.046875,
+      "json_valid_rate": 0.0625,
+      "mean_turns": 2.9375,
+      "mean_action_tokens": 81.71875,
+      "truncated": 0,
+      "tool_error_episodes": 61,
+      "recovered_episodes": 0,
+      "seconds": 80.29588275495917
+    },
+    "sft": {
+      "n": 64,
+      "correct": 37,
+      "execution_match": 0.578125,
+      "executable_rate": 0.84375,
+      "json_valid_rate": 1.0,
+      "mean_turns": 2.0,
+      "mean_action_tokens": 71.75,
+      "truncated": 0,
+      "tool_error_episodes": 10,
+      "recovered_episodes": 0,
+      "seconds": 58.612828608602285
+    },
+    "grpo": {
+      "n": 64,
+      "correct": 37,
+      "execution_match": 0.578125,
+      "executable_rate": 0.84375,
+      "json_valid_rate": 1.0,
+      "mean_turns": 2.0,
+      "mean_action_tokens": 70.9375,
+      "truncated": 0,
+      "tool_error_episodes": 10,
+      "recovered_episodes": 0,
+      "seconds": 58.994930439163
+    }
+  },
+  "parameters": {
+    "total": 1545893376,
+    "trainable": 2179072
+  },
+  "base_dev": {
+    "n": 24,
+    "correct": 0,
+    "execution_match": 0.0,
+    "executable_rate": 0.0,
+    "json_valid_rate": 0.0,
+    "mean_turns": 3.0,
+    "mean_action_tokens": 111.91666666666667,
+    "truncated": 0,
+    "tool_error_episodes": 24,
+    "recovered_episodes": 0,
+    "seconds": 42.72935809008777
+  },
+  "peak_allocated_gib": 6.364863872528076,
+  "sft_training": {
+    "examples": 512,
+    "updates": 128,
+    "seconds": 114.0975586171262
+  },
+  "sft_dev": {
+    "n": 24,
+    "correct": 18,
+    "execution_match": 0.75,
+    "executable_rate": 0.9166666666666666,
+    "json_valid_rate": 1.0,
+    "mean_turns": 2.0,
+    "mean_action_tokens": 65.83333333333333,
+    "truncated": 0,
+    "tool_error_episodes": 2,
+    "recovered_episodes": 0,
+    "seconds": 22.357401218265295
+  },
+  "grpo_training": {
+    "updates": 40,
+    "seconds": 239.55222758604214
+  },
+  "grpo_dev": {
+    "n": 24,
+    "correct": 17,
+    "execution_match": 0.7083333333333334,
+    "executable_rate": 0.875,
+    "json_valid_rate": 1.0,
+    "mean_turns": 2.0,
+    "mean_action_tokens": 63.5,
+    "truncated": 0,
+    "tool_error_episodes": 3,
+    "recovered_episodes": 0,
+    "seconds": 20.17327592894435
+  }
+}

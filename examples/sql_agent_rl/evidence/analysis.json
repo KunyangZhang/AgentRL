@@ -1,0 +1,86 @@
+{
+  "n": 64,
+  "scope": "Single seed and filtered single-database execution metric; intervals do not capture training-seed uncertainty.",
+  "stages": {
+    "base": {
+      "failure_buckets": {
+        "invalid_protocol": 60,
+        "wrong_result": 2,
+        "sql_execution_error": 1,
+        "correct": 1
+      },
+      "execution_match_95pct_wilson": [
+        0.0027634707504014047,
+        0.08334298900290629
+      ],
+      "mean_input_tokens": 1988.859375,
+      "mean_action_tokens": 81.71875
+    },
+    "prompt-only": {
+      "failure_buckets": {
+        "wrong_result": 13,
+        "correct": 38,
+        "sql_execution_error": 9,
+        "no_submission": 4
+      },
+      "execution_match_95pct_wilson": [
+        0.471449865045497,
+        0.7054327556474111
+      ],
+      "mean_input_tokens": 1575.359375,
+      "mean_action_tokens": 75.09375
+    },
+    "sft": {
+      "failure_buckets": {
+        "wrong_result": 17,
+        "correct": 37,
+        "sql_execution_error": 10
+      },
+      "execution_match_95pct_wilson": [
+        0.4560981205252726,
+        0.6913040633854843
+      ],
+      "mean_input_tokens": 1322.421875,
+      "mean_action_tokens": 71.75
+    },
+    "grpo": {
+      "failure_buckets": {
+        "wrong_result": 17,
+        "correct": 37,
+        "sql_execution_error": 10
+      },
+      "execution_match_95pct_wilson": [
+        0.4560981205252726,
+        0.6913040633854843
+      ],
+      "mean_input_tokens": 1322.015625,
+      "mean_action_tokens": 70.9375
+    }
+  },
+  "paired_comparisons": {
+    "sft_minus_prompt-only": {
+      "difference": -0.015625,
+      "bootstrap_95pct": [
+        -0.125,
+        0.109375
+      ],
+      "improved_questions": 7,
+      "regressed_questions": 8
+    },
+    "grpo_minus_sft": {
+      "difference": 0.0,
+      "bootstrap_95pct": [
+        0.0,
+        0.0
+      ],
+      "improved_questions": 0,
+      "regressed_questions": 0
+    }
+  },
+  "grpo_training": {
+    "logged_updates": 40,
+    "zero_reward_variance_groups": 21,
+    "nonzero_reward_variance_groups": 19,
+    "sampled_trajectories": 160
+  }
+}

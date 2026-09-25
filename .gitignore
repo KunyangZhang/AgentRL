@@ -370,3 +370,8 @@ result*/
 # Local experiment checkpoints and dependency environments
 .venv-*/
 examples/tool_policy_lab/runs/
+
+# SQL agent model/data and run artifacts (publish selected evidence separately)
+examples/sql_agent_rl/runs/
+examples/sql_agent_rl/data/
+examples/sql_agent_rl/models/

@@ -1,0 +1,14 @@
+sql-agent-train:
+  module: sql_agent_rl.task.SQLAgentTask
+  parameters:
+    name: sql-agent-train
+    cases_path: /root/autodl-tmp/agent-lab/splits/train.json
+    databases: /root/autodl-tmp/agent-lab/spider/database
+    concurrency: 4
+sql-agent-dev:
+  module: sql_agent_rl.task.SQLAgentTask
+  parameters:
+    name: sql-agent-dev
+    cases_path: /root/autodl-tmp/agent-lab/splits/dev.json
+    databases: /root/autodl-tmp/agent-lab/spider/database
+    concurrency: 4

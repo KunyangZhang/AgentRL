@@ -1,0 +1,20 @@
+{
+  "seed": 17,
+  "model": "/root/autodl-tmp/agent-lab/model",
+  "data": "/root/autodl-tmp/agent-lab/splits",
+  "databases": "/root/autodl-tmp/agent-lab/spider/database",
+  "max_context": 3072,
+  "max_new_tokens": 160,
+  "max_turns": 3,
+  "temperature": 0.8,
+  "lora_rank": 16,
+  "sft_epochs": 1,
+  "sft_accumulate": 4,
+  "sft_lr": 0.0001,
+  "rl_lr": 1e-05,
+  "rl_updates": 40,
+  "group_size": 4,
+  "clip": 0.2,
+  "kl_coef": 0.01,
+  "eval_batch": 4
+}

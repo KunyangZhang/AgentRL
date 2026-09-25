@@ -1,0 +1,7 @@
+{
+  "declared_at": "2026-09-25T16:08:20.694054+00:00",
+  "scope": "Additional prompt-only baseline, declared before any formal test evaluation",
+  "method": "Base model plus one fixed synthetic products/count query-feedback-submit demonstration",
+  "reason": "Separate protocol format learning from SQL reasoning; no tuning on held-out test",
+  "sample_selection": "none; synthetic demonstration fixed in prompt_baseline.py"
+}

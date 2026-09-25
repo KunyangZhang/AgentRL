@@ -1,0 +1,13 @@
+{
+  "n": 64,
+  "correct": 38,
+  "execution_match": 0.59375,
+  "executable_rate": 0.796875,
+  "json_valid_rate": 1.0,
+  "mean_turns": 2.0625,
+  "mean_action_tokens": 75.09375,
+  "truncated": 0,
+  "tool_error_episodes": 13,
+  "recovered_episodes": 0,
+  "seconds": 70.27951741404831
+}
